@@ -211,7 +211,36 @@ class SignupScreen extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(height: 30)
+            const SizedBox(height: 30),
+            Container(
+              height: MediaQuery.of(context).size.height - 615,
+              decoration: const BoxDecoration(
+                color: Colors.red,
+                borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(80),
+                    topRight: Radius.circular(80)),
+              ),
+              child: Row(children: [
+                Expanded(
+                  child: Column(
+                    children: const [
+                      SizedBox(height: 40),
+                      Icon(Icons.help, size: 30),
+                      Text("Need Help")
+                    ],
+                  ),
+                ),
+                Expanded(
+                  child: Column(
+                    children: const [
+                      SizedBox(height: 40),
+                      Icon(Icons.person, size: 30),
+                      Text("Contact as guset")
+                    ],
+                  ),
+                ),
+              ]),
+            )
           ],
         ),
       ),

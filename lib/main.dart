@@ -1,7 +1,6 @@
 import 'package:alsooq_proj/services/theme/theme_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import 'view/login_screen/login_screen.dart';
 
 void main() {
